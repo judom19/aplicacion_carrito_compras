@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista de Articulos</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <div class="container "><!--CONTENEDOR PRINCIPAL-->
+      <br>
+        <div id="Aplicacion" class="row pt-6 ">
+          <div class="col-sm-3 "><!--CONTENEDOR DE LA APP-->
+
+              <div class="card mb-3" id="tarjeta_principal">
+                  <h3 class="card-header">Agregar al carrito</h3>
+                  
+                  <img style="height: 200px; width: 100%; display: block;" src="articulos.png" alt="Card image">
+                  
+                  
+                  <div class="card-body">
+                    <form id="carrito_pedido" >
+                      
+                      <div class="form-group">
+                        
+                        <label >Nombre:</label>
+                            <input  id="nombre"type="text" placeholder="Nombre Producto" class="form-control" >
+                      </label>
+                      </div>
+                      <div class="form-group">
+                        
+                          <label >Precio:</label>
+                              <input  id="precio"type="number"  step="0.01" placeholder="Precio Producto" class="form-control">
+                        </label>
+                        </div>
+                        <div class="form-group">
+                        
+                            <label >Fecha de creacion:</label>
+                                <input  id="fecha_creacion"type="number" value="2019" min="2010" max="2050" placeholder="A de creacion Producto" class="form-control">
+                          </label>
+                          </div>
+                        <input id="submit"type="submit" value="agregar" class="btn btn-primary btn-block form-control mr-sm-2">
+                        <!-- <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button> -->
+
+                    </form>
+                  </div>
+                  
+                  <div class="card-footer text-muted text-center">
+                    <label for="">fecha de compra</label>
+                      <script>
+                          var fecha = new Date();
+                          document.write(fecha.getDate() + "/" + (fecha.getMonth() +1) + "/" + fecha.getFullYear());
+                      </script>
+                  </div>
+              </div>
+          
+          </div><!--CIERRE CONTENEDOR APP-->
+       
+          <div id="listado" class="col-sm-7"> <!-- CONTENEDOR DEL LISTADO -->
+            
+            
+          </div><!--CIERRE CONTENEDOR LISTADO-->
+         
+          
+  </div>
+    </div><!--CIERRE CONTENEDOR PRINCIPAL-->
+</body>
+<style>
+  #tarjeta_principal,#submit{
+    border-radius: 10px;
+  }
+</style>
+<script type="text/javascript" src="app.js"></script>
+
+</html>
+
+
