@@ -91,7 +91,7 @@ document.getElementById('carrito_pedido').addEventListener('submit',function(e){
     //resetear formulario
     interfaz.resetForm();
     interfaz.mostrarMensaje('Agregado al carrito','success');//llamando metodo del mensaje
-    e.preventDefault();
+    
     //OBTENEMOS EL EVENTO CLICK DEL ELEMENTO 'listado' donde se encruentra el articulo a eliminar
 });
 
